@@ -31,7 +31,7 @@
 <a class="skip" href="#contenu">Aller au contenu</a>
 <header class="site-header">
 <div class="wrap">
-<a class="brand" href="index.html"><img src="assets/logo.png" width="40" height="40" alt="">Nage Club</a>
+<a class="brand" href="index.html"><img src="assets/logo.png" width="36" height="36" alt=""><span>Nage Club<span class="brand-sub"> · Support</span></span></a>
 <nav class="nav" aria-label="Navigation principale">
 <details>
 <summary>Menu</summary>
@@ -42,79 +42,124 @@
 </header>
 <main id="contenu">
 
-<section class="hero">
-<svg class="pulse" viewBox="0 0 1200 44" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><polyline pathLength="1" points="0,26 530,26 566,26 584,8 604,40 624,2 646,26 680,26 960,26 990,26 1006,14 1022,32 1038,26 1200,26"/></svg>
-<div class="wrap">
-<div>
-<span class="eyebrow">Nage Club</span>
-<h1>Aide et support Nage Club</h1>
-<p>Nage Club aide un club de natation à planifier ses séances, à suivre la présence et la charge d'entraînement de ses nageurs, et à repérer les signes de fatigue grâce à un questionnaire quotidien.</p>
+<section class="hero" aria-labelledby="titre">
+<div class="wrap hero-grid">
+<div class="hero-text">
+<p class="eyebrow">Centre d'aide</p>
+<h1 id="titre">Aide et support <span class="h1-brand">Nage Club</span></h1>
+<p class="hero-lede">Nage Club aide un club de natation à planifier ses séances, à suivre la présence et la charge d'entraînement de ses nageurs, et à repérer les signes de fatigue grâce à un questionnaire quotidien.</p>
 <div class="hero-actions">
-<a class="btn btn-light" href="faq.html">Consulter la FAQ</a>
-<a class="btn btn-outline" href="mailto:bart.lecon60@gmail.com?subject=Support%20Nage%20Club">Écrire au support</a>
+<a class="btn btn-hero" href="#probleme">J'ai un problème</a>
+<a class="btn btn-outline" href="faq.html">Consulter la FAQ</a>
 </div>
 </div>
-<img class="hero-logo" src="assets/logo.png" width="208" height="208" alt="" decoding="async">
+<figure class="load-chart">
+<p class="load-chart-title" aria-hidden="true">Semaine d'entraînement</p>
+<svg viewBox="0 0 336 176" role="img" aria-labelledby="schema-titre" focusable="false">
+<title id="schema-titre">Schéma : charge prescrite et charge réalisée, jour par jour, sur une semaine</title>
+<g class="lc-grid"><line x1="0" y1="40" x2="336" y2="40"/><line x1="0" y1="80" x2="336" y2="80"/><line x1="0" y1="120" x2="336" y2="120"/></g>
+<g class="lc-plan">
+<rect x="10" y="78" width="28" height="70"/><rect x="58" y="53" width="28" height="95"/><rect x="106" y="98" width="28" height="50"/><rect x="154" y="48" width="28" height="100"/><rect x="202" y="88" width="28" height="60"/><rect x="250" y="63" width="28" height="85"/>
+</g>
+<g class="lc-done">
+<rect x="17" y="84" width="14" height="64"/><rect x="65" y="56" width="14" height="92"/><rect x="113" y="100" width="14" height="48"/><rect x="161" y="36" width="14" height="112"/><rect x="209" y="78" width="14" height="70"/><rect x="257" y="52" width="14" height="96"/>
+</g>
+<line class="lc-base" x1="0" y1="148.5" x2="336" y2="148.5"/>
+<line class="lc-rest" x1="302" y1="144" x2="322" y2="144"/>
+<g class="lc-days"><text x="24" y="168">L</text><text x="72" y="168">M</text><text x="120" y="168">M</text><text x="168" y="168">J</text><text x="216" y="168">V</text><text x="264" y="168">S</text><text x="312" y="168">D</text></g>
+</svg>
+<figcaption>
+<span class="lc-key lc-key-plan">Charge prescrite</span>
+<span class="lc-key lc-key-done">Charge réalisée</span>
+<span class="lc-note">Schéma illustratif, sans données réelles : l'application rapporte la charge réalisée à la charge prescrite.</span>
+</figcaption>
+</figure>
 </div>
-<svg class="wave" viewBox="0 0 1200 48" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0,26 C150,6 300,6 450,26 C600,46 750,46 900,26 C1050,6 1125,10 1200,22 L1200,48 L0,48 Z"/></svg>
+<div class="lane-rope" aria-hidden="true"></div>
 </section>
 
-<div class="wrap">
-<div class="cards">
-<article class="card">
-<h2>Démarrage</h2>
-<p>Un compte s'ouvre en créant un club, ou en rejoignant un club existant sur validation d'un de ses encadrants. Trois espaces : entraîneur, nageur, parent.</p>
-<p><a href="faq.html#demarrage">Voir les questions de démarrage</a></p>
-</article>
-<article class="card">
-<h2>Données et vie privée</h2>
-<p>Consentement explicite pour le questionnaire de santé, export de vos données depuis votre profil, suppression du compte depuis l'application.</p>
-<p><a href="confidentialite.html">Politique de confidentialité</a> · <a href="supprimer-compte.html">Supprimer mon compte</a></p>
-</article>
-<article class="card">
-<h2>Nous joindre</h2>
-<p><a href="mailto:bart.lecon60@gmail.com?subject=Support%20Nage%20Club">bart.lecon60@gmail.com</a></p>
-<p>Réponse sous 48 h ouvrées.</p>
-<p><a href="#contact">Voir la section contact</a></p>
-</article>
-</div>
+<div class="wrap paths">
+<section class="path path-help" id="probleme" aria-labelledby="titre-probleme">
+<p class="path-kicker">Besoin d'aide</p>
+<h2 id="titre-probleme">J'ai un problème</h2>
+<ul class="task-list">
+<li><a href="faq.html#q-email"><span>Je ne reçois pas l'e-mail de création de compte ou de réinitialisation</span></a></li>
+<li><a href="faq.html#q-consentement"><span>Retirer mon consentement au suivi de santé</span></a></li>
+<li><a href="faq.html#q-copie"><span>Obtenir une copie de mes données</span></a></li>
+<li><a href="supprimer-compte.html"><span>Supprimer mon compte</span></a></li>
+<li><a href="#contact"><span>Écrire au support <small>réponse sous 48 h ouvrées</small></span></a></li>
+</ul>
+</section>
+
+<section class="path path-discover" aria-labelledby="titre-decouvrir">
+<p class="path-kicker">Premiers pas</p>
+<h2 id="titre-decouvrir">Je découvre Nage Club</h2>
+<p>Un compte s'ouvre en créant un club, ou en rejoignant un club existant sur validation d'un de ses encadrants. Trois espaces :</p>
+<dl class="roles">
+<div><dt>Entraîneur</dt><dd>voit les nageurs des groupes qu'il encadre</dd></div>
+<div><dt>Nageur</dt><dd>voit ses propres données</dd></div>
+<div><dt>Parent</dt><dd>voit les données de son enfant mineur</dd></div>
+</dl>
+<p class="path-links"><a href="faq.html#demarrage">Questions de démarrage</a> <a href="confidentialite.html">Politique de confidentialité</a></p>
+</section>
 </div>
 
-<section class="section" id="questions">
+<section class="facts" aria-labelledby="titre-facts">
 <div class="wrap">
-<div class="prose">
-<h2>Les questions les plus fréquentes</h2>
-<details class="q"><summary>Comment créer un compte ou rejoindre un club ?</summary><div class="a"><p>Un compte s'ouvre soit en créant un club, soit en rejoignant un club existant, sur validation d'un de ses encadrants. Le service s'adresse aux clubs : il n'y a pas d'inscription individuelle sans club.</p><p>Pour rejoindre un club, demandez à son entraîneur ou à son administrateur de valider votre arrivée.</p></div></details>
-<details class="q"><summary>Qui peut voir mes données ?</summary><div class="a"><p>L'entraîneur voit les nageurs des groupes qu'il encadre, et seulement ceux-là. Le parent voit les données de son enfant mineur, et rien d'autre. Le nageur voit ses propres données, et l'administrateur du club voit les nageurs de son club.</p><p>Ces cloisons sont appliquées par la base de données elle-même, à chaque requête, et pas seulement par l'interface. Une donnée qu'un compte n'a pas le droit de lire ne lui est pas envoyée.</p></div></details>
-<details class="q"><summary>Mon enfant mineur peut-il avoir un compte ?</summary><div class="a"><p>Oui. Les questions sur sa santé ne lui sont posées qu'après l'autorisation d'un titulaire de l'autorité parentale, donnée depuis un compte parent rattaché ou sur le formulaire d'inscription du club. Aucun entraîneur ne peut consentir à la place d'un parent.</p><p>Le jour de ses 18 ans, le nageur reprend la main : l'accès de ses parents à ses données se ferme automatiquement, et ne se rouvre que s'il l'autorise lui-même.</p></div></details>
-<details class="q"><summary>Comment retirer mon consentement ?</summary><div class="a"><p>Depuis votre profil dans l'application. Le retrait supprime immédiatement l'ensemble des questionnaires et des indicateurs déjà collectés, et pas seulement ceux à venir. Pour un mineur, le consentement se retire aussi en le disant au club.</p><p>Vous continuez à vous entraîner normalement : seul le suivi de santé s'arrête.</p></div></details>
-<details class="q"><summary>Comment obtenir une copie de mes données ?</summary><div class="a"><p>Depuis votre profil, l'application produit un export complet et lisible par machine : identité, e-mail du compte, rôles, liens familiaux, appartenances de groupe, séances et charges d'entraînement, questionnaires et indicateurs. Un compte parent peut aussi exporter les données de son enfant.</p></div></details>
-<details class="q"><summary>Comment supprimer mon compte ?</summary><div class="a"><p>Depuis l'application. Vos rôles, vos liens familiaux et, si vous gérez votre propre suivi, vos données de santé sont alors effacés immédiatement ; la fermeture définitive de votre identifiant de connexion est ensuite finalisée par un administrateur.</p><p>Le détail des deux chemins possibles est sur la page <a href="supprimer-compte.html">Supprimer mon compte</a>.</p></div></details>
-<p><a href="faq.html">Toute la FAQ</a></p>
+<h2 id="titre-facts" class="facts-title">Vos données de santé, en trois repères</h2>
+<ul class="facts-list">
+<li><strong class="fact-figure">Art. 9</strong><span>Le questionnaire de santé ne s'ouvre que par un consentement explicite et distinct, révocable à tout moment.</span></li>
+<li><strong class="fact-figure">3 saisons</strong><span>Durée de conservation par défaut (la saison en cours et les deux précédentes), puis suppression automatique chaque nuit.</span></li>
+<li><strong class="fact-figure">UE</strong><span>Hébergement Supabase en Union européenne, aucun transfert hors de l'Union prévu.</span></li>
+</ul>
+<p class="facts-more"><a href="confidentialite.html">Lire la politique de confidentialité</a></p>
+</div>
+</section>
+
+<section class="section" id="questions" aria-labelledby="titre-questions">
+<div class="wrap split">
+<div class="split-head">
+<h2 id="titre-questions">Les questions les plus fréquentes</h2>
+<p>Six questions courantes. La FAQ en compte 18, classées par rubrique.</p>
+<p><a class="btn btn-ghost" href="faq.html">Toute la FAQ</a></p>
+</div>
+<div class="split-body">
+<details class="q"><summary>Comment créer un compte ou rejoindre un club ?</summary><div class="a"><p>Un compte s'ouvre soit en créant un club, soit en rejoignant un club existant, sur validation d'un de ses encadrants. Le service s'adresse aux clubs : il n'y a pas d'inscription individuelle sans club.</p><p>Pour rejoindre un club, demandez à son entraîneur ou à son administrateur de valider votre arrivée.</p></div></details>
+<details class="q"><summary>Qui peut voir mes données ?</summary><div class="a"><p>L'entraîneur voit les nageurs des groupes qu'il encadre, et seulement ceux-là. Le parent voit les données de son enfant mineur, et rien d'autre. Le nageur voit ses propres données, et l'administrateur du club voit les nageurs de son club.</p><p>Ces cloisons sont appliquées par la base de données elle-même, à chaque requête, et pas seulement par l'interface. Une donnée qu'un compte n'a pas le droit de lire ne lui est pas envoyée.</p></div></details>
+<details class="q"><summary>Mon enfant mineur peut-il avoir un compte ?</summary><div class="a"><p>Oui. Les questions sur sa santé ne lui sont posées qu'après l'autorisation d'un titulaire de l'autorité parentale, donnée depuis un compte parent rattaché ou sur le formulaire d'inscription du club. Aucun entraîneur ne peut consentir à la place d'un parent.</p><p>Le jour de ses 18 ans, le nageur reprend la main : l'accès de ses parents à ses données se ferme automatiquement, et ne se rouvre que s'il l'autorise lui-même.</p></div></details>
+<details class="q"><summary>Comment retirer mon consentement ?</summary><div class="a"><p>Depuis votre profil dans l'application. Le retrait supprime immédiatement l'ensemble des questionnaires et des indicateurs déjà collectés, et pas seulement ceux à venir. Pour un mineur, le consentement se retire aussi en le disant au club.</p><p>Vous continuez à vous entraîner normalement : seul le suivi de santé s'arrête.</p></div></details>
+<details class="q"><summary>Comment obtenir une copie de mes données ?</summary><div class="a"><p>Depuis votre profil, l'application produit un export complet et lisible par machine : identité, e-mail du compte, rôles, liens familiaux, appartenances de groupe, séances et charges d'entraînement, questionnaires et indicateurs. Un compte parent peut aussi exporter les données de son enfant.</p></div></details>
+<details class="q"><summary>Comment supprimer mon compte ?</summary><div class="a"><p>Depuis l'application. Vos rôles, vos liens familiaux et, si vous gérez votre propre suivi, vos données de santé sont alors effacés immédiatement ; la fermeture définitive de votre identifiant de connexion est ensuite finalisée par un administrateur.</p><p>Le détail des deux chemins possibles est sur la page <a href="supprimer-compte.html">Supprimer mon compte</a>.</p></div></details>
 </div>
 </div>
 </section>
 
-<section class="section" id="contact">
-<div class="wrap">
-<div class="prose">
-<h2>Contacter le support</h2>
-<p>Écrivez-nous pour un problème de compte, une question sur vos données ou une demande de suppression. Nous répondons sous 48 h ouvrées.</p>
-<div class="contact-box">
-<p><a class="mail" id="mail-link" href="mailto:bart.lecon60@gmail.com?subject=Support%20Nage%20Club">bart.lecon60@gmail.com</a><span id="copy-slot"></span></p>
+<section class="contact" id="contact" aria-labelledby="titre-contact">
+<div class="wrap split">
+<div class="split-head">
+<h2 id="titre-contact">Contacter le support</h2>
+<p>Écrivez-nous pour un problème de compte, une question sur vos données ou une demande de suppression. Nous répondons sous 48 h ouvrées.</p>
+</div>
+<div class="split-body contact-box">
+<p class="mail-line"><a class="mail" id="mail-link" href="mailto:bart.lecon60@gmail.com?subject=Support%20Nage%20Club">bart.lecon60@gmail.com</a><span id="copy-slot"></span></p>
 <p><a class="btn" href="mailto:bart.lecon60@gmail.com?subject=Support%20Nage%20Club">Écrire au support</a></p>
-</div>
-<p>Pour une demande qui concerne vos données, indiquez le nom de votre club et l'adresse du compte concerné. N'envoyez jamais votre mot de passe ni de donnée de santé par e-mail.</p>
+<p class="contact-note">Pour une demande qui concerne vos données, indiquez le nom de votre club et l'adresse du compte concerné. N'envoyez jamais votre mot de passe ni de donnée de santé par e-mail.</p>
 </div>
 </div>
 </section>
 
 </main>
 <footer class="site-footer">
-<div class="wrap">
+<div class="wrap footer-grid">
+<div class="footer-id">
+<p class="footer-brand"><img src="assets/logo.png" width="28" height="28" alt="">Nage Club</p>
+<p>Support : <a href="mailto:bart.lecon60@gmail.com?subject=Support%20Nage%20Club">bart.lecon60@gmail.com</a><br>Réponse sous 48 h ouvrées.</p>
+</div>
 <nav aria-label="Pied de page"><ul><li><a href="index.html">Support</a></li><li><a href="faq.html">FAQ</a></li><li><a href="confidentialite.html">Confidentialité</a></li><li><a href="cgu.html">CGU</a></li><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="supprimer-compte.html">Supprimer mon compte</a></li></ul></nav>
+</div>
+<div class="wrap footer-legal">
 <p>© 2026 Charles Andrade · Nage Club</p>
-<p class="small">Le moteur de calcul de charge d'entraînement s'appelle AquaPulse.</p>
+<p>Le moteur de calcul de charge d'entraînement s'appelle AquaPulse.</p>
 </div>
 </footer>
 </body>
