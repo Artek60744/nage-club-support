@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://artek60744.github.io/nage-club-support/sitemap.xml
